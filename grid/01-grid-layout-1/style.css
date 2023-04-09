@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  margin: 0;
+  margin: 0px;
 }
 
 .container {
@@ -8,6 +8,9 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display : grid;
+  row-gap:5px;
+  column-gap: 5px;;
 }
 
 .container div {
@@ -17,22 +20,37 @@ body, html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
+  grid-template-columns : 40vw 60vw;
+  grid-template-rows:20vh 20vh 40vh 20vh;
 }
 
 .header {
   background-color: #FFDE22;
+  grid-column-start:1;
+  grid-column-end : 4;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-column-start:1;
+  grid-column-end : 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-column-start:2;
+  grid-column-end:4;
+  grid-row-start:2;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column-start:2;
+  grid-column-end:4;
+  grid-row-start:3;
+  grid-row-end: 4;
 }
 
 .article p {
@@ -44,4 +62,6 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-column-start:1;
+  grid-column-end: 4;
 }
