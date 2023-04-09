@@ -20,7 +20,7 @@ body, html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
-  grid-template-columns : 40vw 60vw;
+  grid-template-columns :40% 60%;
   grid-template-rows:20vh 20vh 40vh 20vh;
 }
 
@@ -36,6 +36,7 @@ body, html {
   grid-column-end : 2;
   grid-row-start: 2;
   grid-row-end: 4;
+  flex-shrink:2;
 }
 
 .nav {
@@ -51,6 +52,7 @@ body, html {
   grid-column-end:4;
   grid-row-start:3;
   grid-row-end: 4;
+  flex-shrink: 2;
 }
 
 .article p {
